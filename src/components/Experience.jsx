@@ -2,9 +2,22 @@ import { FaCalendarAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { SiAccenture } from "react-icons/si"; // Accenture icon
 import "../scss/Experience.scss"
 import techieAidLogo from "../assests/TechieAid.jpeg";
+import utsaLogo from "../assests/utsa.jpeg";
 
 export default function ExperienceSection() {
   const experiences = [
+     {
+      role: "Web Developer / Research Assistant",
+      company: "University of Texas at San Antonio (UTSA) - Part time",
+      logo:  <img src={utsaLogo} alt="UTSA" style={{ width: "50px", height: "50px", borderRadius: "8px" }} />,
+      duration: "2025 - 2027",
+      location: "San Antonio, USA",
+      points: [
+        "Revived and modernized the official CAMLS website using React.js, Node.js, and MongoDB, improving page load speed by 40% and ensuring a scalable architecture.",
+        "Implemented modular, reusable components with optimized state management using React Hooks and Context API.",
+        "Collaborated with faculty and data engineers to design structured data models and content synchronization for the industry consortium portal.",
+      ],
+    },
     {
       role: "App Development Associate",
       company: "Accenture - Full time",

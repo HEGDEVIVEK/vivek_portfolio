@@ -6,9 +6,9 @@ export default function EducationSection() {
     {
       degree: "MS in Computer Science",
       school: "University of Texas at San Antonio",
-      gpa: "-/4.0",
+      gpa: "3.8/4.0",
       duration: "2025 - 2027",
-      location: "Texas, USA",
+      location: "San Antonio, Texas, USA",
       points: [
         "Specialized in Artificial Intelligence and Machine Learning.",
       ],

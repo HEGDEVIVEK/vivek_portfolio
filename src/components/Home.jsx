@@ -25,7 +25,7 @@ export default function Home() {
 
           {/* Centered buttons and icons */}
           <div className="home-actions">
-            <a href="https://drive.google.com/file/d/1Nx0B2hsG4k2gaHcNWsrW3c8vP-h4uNYA/view?usp=sharing" download className="download-btn">
+            <a href="https://drive.google.com/file/d/1x8XW4AGj-GFcnpKs45w8Uj7KqtynbmfW/view?usp=sharing" download className="download-btn">
               Download Resume
             </a>
 
