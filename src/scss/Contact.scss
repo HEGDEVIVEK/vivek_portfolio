@@ -157,7 +157,7 @@
         padding: 10px;
         border-radius: 6px;
         border: 1px solid #d1d5db;
-        margin-bottom: 15px;
+        //margin-bottom: 15px;
         font-size: 14px;
         outline: none;
         color: #111827;
@@ -175,34 +175,55 @@
         }
       }
 
-      button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        padding: 12px;
-        background: #2563eb;
-        color: #fff;
-        border: none;
-        border-radius: 6px;
-        font-size: 14px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: background 0.3s;
-
-        &:hover {
-          background: #1e40af;
-        }
-
-        // same button in dark mode (keep contrast)
-        body.dark-mode & {
-          background: #2563eb;
-
-          &:hover {
-            background: #1e40af;
-          }
-        }
+      .errorMsg {
+        color: #dc2626;
+        font-size: 12px;
+        margin-top: 4px;
+        //margin-bottom: 10px;
       }
+
+      button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  &:hover {
+    background: #1e40af;
+  }
+
+  // disabled state
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  &:disabled:hover {
+    background: #2563eb;
+  }
+
+  // dark mode (keep contrast)
+  body.dark-mode & {
+    background: #2563eb;
+
+    &:hover {
+      background: #1e40af;
+    }
+  }
+}
+
+     
+
     }
   }
 }
